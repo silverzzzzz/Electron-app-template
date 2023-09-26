@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Browser sample</title>
+  <link rel="stylesheet" href="./style.css" type="text/css">
+</head>
+<body>
+  <h1>サイトを開く</h1>
+  <div>
+    <div>
+      <label>
+        URLを入力してください：<input id="search-url" type="text" value="https://env.b4iine.net/">
+      </label>
+      <button id="search-btn">開く</button>
+    </div>
+    <div id="browser-container">
+    </div>
+  </div>
+</body>
+<script>
+  document.getElementById("search-btn").addEventListener(
+    "click",
+    search_start
+  );
+  /*要素の作成*/
+  function search_start() {
+    alert("検索開始");
+    var url = document.getElementById("search-url").value;
+    var el = document.getElementById("browser-container");
+    var iframe_element = `<iframe id="iframe-root" src="${url}"></iframe>`;
+    if (document.getElementById("iframe-root") != null) {
+      document.getElementById("iframe-root").remove();
+    }
+    el.insertAdjacentHTML('beforeend', iframe_element);
+  }
+</script>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "helloworld-sample",
+  "version": "1.0.0",
+  "description": "helloworld sample",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "s",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^26.2.2"
+  }
+}

@@ -1,0 +1,9 @@
+#browser-container{
+  width: 100%;
+  height: 600px;
+}
+#iframe-root{
+  border:4px solid red;
+  width: calc(100% - 8px);
+  height:600px;
+}
