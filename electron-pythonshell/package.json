@@ -1,7 +1,7 @@
 {
-  "name": "helloworld-sample",
+  "name": "electron-pythonshell",
   "version": "1.0.0",
-  "description": "helloworld sample",
+  "description": "electron-pythonshell sample",
   "main": "index.js",
   "scripts": {
     "start": "electron .",
